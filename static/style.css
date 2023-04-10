@@ -52,6 +52,7 @@
     font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 80%;
 }
 
 .menu__link:hover {
@@ -111,10 +112,12 @@
         align-items: center;
         background-color: #f9f9f9;
     }
-
+/*
     .header__header {
-        font-size: 500%;
+        font-size: 100%;
     }
+
+ */
 }
 
 .header__image {}
