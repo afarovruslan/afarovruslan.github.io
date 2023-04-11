@@ -3,15 +3,6 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url(fonts/Montserrat.zip);
-}
-
-.font_monsterrat {
-    font-family: Montserrat, serif;
-}
-
 .black_mode {
     background-color: black;
     color: white;
@@ -67,6 +58,7 @@
 .menu__half_right {
     margin-left: 30%;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .header {
@@ -105,6 +97,9 @@
     .about__paragraph {
         font-size: 150%;
     }
+    .menu__half_right {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 400px) {
@@ -136,19 +131,6 @@
     }
 }
 
-
-@media (max-width: 200px) {
-    .menu__link {
-        font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-        text-decoration: none;
-        color: black;
-        font-size: 50%;
-    }
-    .header__header {
-        font-size: 150%;
-    }
-}
-
 .about {
     display: flex;
     flex-direction: column;
@@ -174,6 +156,7 @@
 
 .skills__list {
     font-size: 3vmax;
+    padding-left: 5vmax;
 }
 
 .skills__header {

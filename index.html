@@ -6,10 +6,16 @@
     <meta name="author" content="Руслна Яфаров">
     <meta name="keywords" content="личный сайт">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta itemprop="name" content="Руслан Яфаров">
-    <meta itemprop="description" content="Сайт о Руслане Яфарове">
-    <meta property="og:image" content="static/img/me_normal_photo_ziped.jpg">
-    <link rel="stylesheet" href="static/style.css">
+    <meta property="og:image" content="img/me_normal_photo_ziped.jpg">
+    <meta property="og:type" content="profile"/>
+    <meta property="profile:first_name" content="Руслан"/>
+    <meta property="profile:last_name" content="Яфаров"/>
+    <meta property="profile:username" content="afarovrulan"/>
+    <meta property="og:title" content="Это я"/>
+    <meta property="og:description" content="Сайт о Руслане Яфарове"/>
+    <meta property="og:url" content="https://afarovruslan.github.io/"/>
+    <meta property="og:site_name" content="Сайт о Руслане Яфарове"/>
+    <link rel="stylesheet" href="styles/style.css">
     <title>Это я</title>
 </head>
 <body class="page" id="self">
@@ -20,7 +26,7 @@
     <li class="menu__half menu__half_right">
         <a href="#about" class="menu__link">Обо мне</a>
         <a href="#skills" class="menu__link">Скиллы</a>
-        <a href="#contacts" class="menu__link">Контакты</a>
+        <a href="#contacts" class="menu__link">Ссылки</a>
     </li>
 </menu>
 <header class="header grey_mode">
@@ -28,13 +34,13 @@
     <div class="header__paragraph">
         <h1 class="header__header">C++ developer, ML engineer, sportsman</h1>
     </div>
-    <img src="static/img/me_normal_photo_ziped.jpg" alt="здесь должна была быть моя аватарка" class="header__image round square">
+    <img src="img/me_normal_photo_ziped.jpg" alt="здесь должна была быть моя аватарка" class="header__image round square">
 </header>
-<section class="about black_mode font_monsterrat" id="about">
+<section class="about black_mode" id="about">
     <h3 class="about__header">Обо мне</h3>
     <p class="about__paragraph">Скорее всего, все что вы прочитали в загаловке преувелечение или вообще ложь. Но звучит, круто, правда? Зато не ложь, что мне нравится C++, machine learning и спорт. Но в будущем вы скорее всего узнаете обо мне как о предпренимателе или стартапере. Ну, поживем, увидим.</p>
 </section>
-<section class="skills font_monsterrat grey_mode" id="skills">
+<section class="skills grey_mode" id="skills">
     <h3 class="skills__header"><!--Здесь вы найдете скиллы, которыми я (надеюсь) владею:-->Skills:</h3>
     <ul class="skills__list">
         <li>Язык программирования Python, а также библиотеки вроде pandas, numpy, matplotlib</li>
@@ -48,11 +54,11 @@
     </ul>
 </section>
 <footer class="footer black_mode" id="contacts">
-    <h3 class="font_monsterrat">Контакты:</h3>
-    <div class="footer__contacts">
-        <a href="https://t.me/ruslan_o_clock" target="_blank"><img src="static/img/telegram_logo.png" class="footer__img" alt="Телега"></a>
-        <a href="https://vk.com/afarovruslan" target="_blank"><img src="static/img/vkontakte_logo_ziped.png" class="footer__img" alt="ВК"></a>
-        <a href="https://github.com/afarovruslan" target="_blank"><img src="static/img/github_logo2.png" class="footer__img" alt="Гитхаб"></a>
+    <h3>Ссылки</h3>
+    <div class="footer__links">
+        <a href="https://t.me/ruslan_o_clock" target="_blank"><img src="img/telegram_logo.png" class="footer__img" alt="Телега"></a>
+        <a href="https://vk.com/afarovruslan" target="_blank"><img src="img/vkontakte_logo_ziped.png" class="footer__img" alt="ВК"></a>
+        <a href="https://github.com/afarovruslan" target="_blank"><img src="img/github_logo.png" class="footer__img" alt="Гитхаб"></a>
     </div>
 </footer>
 </body>
