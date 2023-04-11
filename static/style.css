@@ -163,7 +163,7 @@
 }
 
 .about__paragraph {
-    font-size: 40px;
+    font-size: 4vmax;
     padding: 5% 10% 3% 10%;
 }
 
@@ -173,7 +173,7 @@
 }
 
 .skills__list {
-    font-size: 40px;
+    font-size: 3vmax;
 }
 
 .skills__header {
