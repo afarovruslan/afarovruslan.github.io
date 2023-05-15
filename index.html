@@ -18,29 +18,30 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Это я</title>
 </head>
-<body class="page" id="self">
+<body class="page white-mode" id="self">
 <menu class="menu">
     <li class="menu__half menu__half_left">
-        <a href="#self" class="menu__link menu__link_left">Руслан Яфаров</a>
+        <a href="#self" class="menu__item menu__link_left white-mode">Руслан Яфаров</a>
     </li>
     <li class="menu__half menu__half_right">
-        <a href="#about" class="menu__link">Обо мне</a>
-        <a href="#skills" class="menu__link">Скиллы</a>
-        <a href="#contacts" class="menu__link">Ссылки</a>
+        <button class="menu__item dark_theme_button">Тёмная тема</button>
+        <a href="#about" class="menu__item white-mode">Обо мне</a>
+        <a href="#skills" class="menu__item white-mode">Скиллы</a>
+        <a href="#contacts" class="menu__item white-mode">Ссылки</a>
     </li>
 </menu>
-<header class="header grey_mode">
+<header class="header grey-mode">
 
     <div class="header__paragraph">
         <h1 class="header__header">C++ developer, ML engineer, sportsman</h1>
     </div>
     <img src="img/me_normal_photo_ziped.jpg" alt="здесь должна была быть моя аватарка" class="header__image round square">
 </header>
-<section class="about black_mode" id="about">
+<section class="about black-mode" id="about">
     <h3 class="about__header">Обо мне</h3>
     <p class="about__paragraph">Скорее всего, все что вы прочитали в загаловке преувелечение или вообще ложь. Но звучит, круто, правда? Зато не ложь, что мне нравится C++, machine learning и спорт. Но в будущем вы скорее всего узнаете обо мне как о предпренимателе или стартапере. Ну, поживем, увидим.</p>
 </section>
-<section class="skills grey_mode" id="skills">
+<section class="skills grey-mode" id="skills">
     <h3 class="skills__header"><!--Здесь вы найдете скиллы, которыми я (надеюсь) владею:-->Skills:</h3>
     <ul class="skills__list">
         <li>Язык программирования Python, а также библиотеки вроде pandas, numpy, matplotlib</li>
@@ -53,7 +54,11 @@
         <li>Ладно здесь я уже шучу</li>
     </ul>
 </section>
-<footer class="footer black_mode" id="contacts">
+<footer class="footer black-mode" id="contacts">
+    <h3>Вы дошли до конца, поэтому получайте приз:</h3>
+    <button class="footer__button-beer">Тыкни сюда!</button>
+    <h3>Если у вас есть ко мне вопросы, можете задать их лично:</h3>
+    <button>Связаться со мной</button>
     <h3>Ссылки</h3>
     <div class="footer__links">
         <a href="https://t.me/ruslan_o_clock" target="_blank"><img src="img/telegram_logo.png" class="footer__img" alt="Телега"></a>
@@ -61,5 +66,7 @@
         <a href="https://github.com/afarovruslan" target="_blank"><img src="img/github_logo.png" class="footer__img" alt="Гитхаб"></a>
     </div>
 </footer>
+<div class="rain rain_animation"></div>
+<script src="scripts/index.js"></script>
 </body>
 </html>
