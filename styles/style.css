@@ -1,3 +1,11 @@
+@import url(blocks/menu.css);
+@import url(blocks/header.css);
+@import url(blocks/about.css);
+@import url(blocks/gallery.css);
+@import url(blocks/skills.css);
+@import url(blocks/footer.css);
+@import url(beer-rain.css);
+
 @font-face {
     src : url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
     font-family: 'PlayfairDisplay';
@@ -7,6 +15,7 @@
     margin: 0;
     font-weight: normal;
     font-family: PlayfairDisplay, serif;
+    transition: 0.4s;
 }
 
 .round {
@@ -27,147 +36,8 @@
     padding-bottom: 100%;
 }
 
-.menu {
-    display: flex;
-    max-height: 30px;
-}
-
 .white {
     color: white;
-}
-
-.menu__item {
-    /*font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-    */
-    font-family: PlayfairDisplay, serif;
-    text-decoration: none;
-    font-size: 90%;
-}
-
-.menu__link:hover {
-    text-decoration: underline;
-}
-
-.menu__half {
-    display: flex;
-    width: 50%;
-}
-
-.menu__half_right {
-    margin-left: 30%;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.header {
-    width: 100%;
-    display: flex;
-    min-height: 800px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.header__paragraph {
-    width: 30%;
-    font-weight: bold;
-}
-
-.header__header {
-    font-size: 500%;
-    margin: 0;
-}
-
-@media (max-width: 950px) {
-    .header__header {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 580px) {
-    .header__header {
-        font-size: 35px;
-    }
-    .skills__list {
-        font-size: 150%;
-    }
-    .about__paragraph {
-        font-size: 150%;
-    }
-    .menu__half_right {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 400px) {
-    .header {
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .about__paragraph {
-        font-size: 1%;
-        padding: 5% 10% 3% 10%;
-    }
-}
-
-@media (max-width: 300px) {
-    .menu__link {
-        font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-        text-decoration: none;
-        color: black;
-        font-size: 50%;
-    }
-    .header__header {
-        font-size: 170%;
-    }
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 600px;
-}
-
-.about__header {
-    font-size: 500%;
-}
-
-.about__paragraph {
-    font-size: 3vmax;
-    padding: 5% 10% 3% 10%;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.skills__list {
-    font-size: 3vmax;
-    padding-left: 5vmax;
-}
-
-.skills__header {
-    font-size: 50px;
-    padding-left: 3%;
-}
-
-.footer__img {
-    max-height: 25px;
-    max-width: 25px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    min-height: 100px;
 }
 
 .black-mode {
@@ -186,40 +56,6 @@
 }
 
 .less-black-mode {
-    background-color: #090909;
+    background-color: #101010;
     color: white;
-}
-
-.rain {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 300vh;
-    width: 100vw;
-    background-image: url(../img/bottle_3.png);
-    opacity: 0.9;
-}
-
-.rain_active {
-    display: block;
-}
-
-.rain_animation {
-    animation: rain 1.8s linear infinite;
-}
-@media (max-width: 800px) {
-    .rain_active {
-        display: none;
-    }
-}
-
-@keyframes rain {
-    from {
-        top: -200vh;
-    }
-    to {
-        top: 0;
-    }
 }

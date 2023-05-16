@@ -1,0 +1,39 @@
+.menu {
+    display: flex;
+    max-height: 30px;
+    transition: 0.4s;
+}
+
+.menu__item {
+    font-family: PlayfairDisplay, serif;
+    text-decoration: none;
+    font-size: 90%;
+    transition: 0.4s;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+.menu__half {
+    display: flex;
+    width: 50%;
+}
+
+.menu__half_right {
+    margin-left: 30%;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media (max-width: 580px) {
+    .menu__half_right {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .menu__item {
+        font-size: 50%;
+    }
+}

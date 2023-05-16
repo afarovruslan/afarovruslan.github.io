@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 600px;
+}
+
+.about__header {
+    font-size: 500%;
+}
+
+.about__paragraph {
+    font-size: 3vmax;
+    padding: 5% 10% 3% 10%;
+}
+
+@media (max-width: 580px) {
+    .about__paragraph {
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 500px) {
+    .about__paragraph {
+        padding: 5% 10% 3% 10%;
+    }
+}

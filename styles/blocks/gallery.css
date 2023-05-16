@@ -1,0 +1,23 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4vh 1vw;
+    min-height: 80vh;
+}
+
+.gallery__item {
+    background-size: cover;
+    cursor: grab;
+}
+
+.gallery__item_long {
+    width: 27%;
+    height: 27%;
+}
+
+.gallery__item_wide {
+    width: 34%;
+    height: 34%;
+}

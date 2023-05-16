@@ -1,0 +1,33 @@
+.rain {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 300vh;
+    width: 100vw;
+    background-image: url(../img/bottle_3.png);
+    opacity: 0.9;
+}
+
+.rain_active {
+    display: block;
+}
+
+.rain_animation {
+    animation: rain 1.8s linear infinite;
+}
+@media (max-width: 800px) {
+    .rain_active {
+        display: none;
+    }
+}
+
+@keyframes rain {
+    from {
+        top: -200vh;
+    }
+    to {
+        top: 0;
+    }
+}

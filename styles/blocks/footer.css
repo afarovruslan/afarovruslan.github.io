@@ -1,0 +1,13 @@
+.footer__img {
+    max-height: 25px;
+    max-width: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100px;
+}

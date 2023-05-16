@@ -1,0 +1,21 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.skills__list {
+    font-size: 3vmax;
+    padding-left: 5vmax;
+}
+
+.skills__header {
+    font-size: 50px;
+    padding-left: 3%;
+}
+
+@media (max-width: 580px) {
+    .skills__list {
+        font-size: 150%;
+    }
+}
