@@ -26,6 +26,11 @@
     flex-direction: row;
 }
 
+.menu__button:hover {
+    text-decoration: none;
+    cursor: grab;
+}
+
 @media (max-width: 580px) {
     .menu__half_right {
         margin-left: 0;

@@ -12,5 +12,5 @@ function changeTheme() {
     changeMode("skills");
 }
 
-const change_theme_button = document.querySelector(".dark_theme_button");
+const change_theme_button = document.querySelector(".menu__button");
 change_theme_button.addEventListener("click", changeTheme);
