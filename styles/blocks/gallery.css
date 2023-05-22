@@ -12,6 +12,11 @@
     cursor: grab;
 }
 
+.gallery__item:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
 .gallery__item_long {
     width: 27%;
     height: 27%;

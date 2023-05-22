@@ -5,6 +5,10 @@
 @import url(blocks/skills.css);
 @import url(blocks/footer.css);
 @import url(beer-rain.css);
+@import url(popups/feedback_popup.css);
+@import url(popups/gallery_popup.css);
+@import url(popups/intrusive_popup.css);
+@import url(popups/popup.css);
 
 @font-face {
     src : url("../fonts/PlayfairDisplay-VariableFont_wght.ttf");
@@ -58,4 +62,8 @@
 .less-black-mode {
     background-color: #101010;
     color: white;
+}
+
+.none {
+    display: none;
 }

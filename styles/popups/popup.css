@@ -1,0 +1,22 @@
+.popup {
+    position: fixed;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    inset: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.6s, opacity 0.6s linear;
+}
+
+.popup_active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup__container {
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}

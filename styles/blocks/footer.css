@@ -11,3 +11,9 @@
     justify-content: space-evenly;
     min-height: 100px;
 }
+
+@media (max-width: 800px) {
+    .footer__button_beer {
+        display: none;
+    }
+}

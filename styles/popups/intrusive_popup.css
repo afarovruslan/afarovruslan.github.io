@@ -1,0 +1,40 @@
+.intrusive-popup {
+    display: none;
+    z-index: 1;
+    width: 40%;
+    height: 50%;
+    position: fixed;
+    top: 32vh;
+    right: 30vw;
+    left: 30vw;
+}
+
+.intrusive-popup__container {
+    position: relative;
+    box-shadow: 0 0 25vmin rgba(0, 0, 0, 0.3);
+    padding: 4vw;
+    border-radius: 4vw;
+}
+
+.intrusive-popup_active {
+    display: block;
+}
+
+.intrusive-popup__text {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.intrusive-popup__close {
+    position: absolute;
+    top: -3vh;
+    right: -3vw;
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: url(../../img/buttons/close.png);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+}

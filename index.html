@@ -19,6 +19,19 @@
     <title>Это я</title>
 </head>
 <body class="page white-mode" id="self">
+<div class="intrusive-popup">
+    <div class="intrusive-popup__container white-mode">
+        <p class="intrusive-popup__text">Правда ведь, сайт балдёжный?</p>
+        <button class="intrusive-popup__close"></button>
+    </div>
+</div>
+<div class="popup">
+    <div class="popup__container">
+        <img class="popup__link popup__link_left" src="img/buttons/left_arrow.png" alt="посмотреть предыдущую фотку">
+        <img class="popup__image" src="#" alt="моя фотка">
+        <img class="popup__link popup__link_right" src="img/buttons/right_arrow.png" alt="посмотреть следующую фотку">
+    </div>
+</div>
 <menu class="menu">
     <li class="menu__half menu__half_left">
         <a href="#self" class="menu__item menu__link_left white-mode">Руслан Яфаров</a>
@@ -47,7 +60,7 @@
     <img src="img/gallery/i_am_cool.jpeg" class="gallery__item gallery__item_wide" alt="третье фото из галереи">
 </section>
 <section class="skills grey-mode" id="skills">
-    <h3 class="skills__header"><!--Здесь вы найдете скиллы, которыми я (надеюсь) владею:-->Skills:</h3>
+    <h3 class="skills__header">Skills:</h3>
     <ul class="skills__list">
         <li>Язык программирования Python, а также библиотеки вроде pandas, numpy, matplotlib</li>
         <li>Основы языка программирования C++</li>
@@ -61,7 +74,7 @@
 </section>
 <footer class="footer black-mode" id="contacts">
     <h3>Вы дошли до конца, поэтому получайте приз:</h3>
-    <button class="footer__button-beer">Тыкни сюда!</button>
+    <button class="footer__button footer__button_beer">Тыкни сюда!</button>
     <h3>Если у вас есть ко мне вопросы, можете задать их лично:</h3>
     <button>Связаться со мной</button>
     <h3>Ссылки</h3>
@@ -71,7 +84,29 @@
         <a href="https://github.com/afarovruslan" target="_blank"><img src="img/logos/github_logo.png" class="footer__img" alt="Гитхаб"></a>
     </div>
 </footer>
+<div class="popup form-popup">
+    <div class="form-popup__container">
+        <form class="form form-popup__form_feedback" novalidate="">
+            <h2 class="form-popup__header">Форма обратной связи</h2>
+            <fieldset class="form-popup__input-container">
+                <label for="phone" class="form-popup__label">Телефон</label>
+                <input id="phone" placeholder="79999999999" type="tel" class="form-popup__input" maxlength="11">
+                <span class="form-popup__error tel-input-error">Номер телефона должен состоять из 11 цифр, как в примере</span>
+                <label for="email" class="form-popup__label">Email</label>
+                <input id="email" placeholder="RuslanKrut228@gmail.com" type="email" class="form-popup__input" required="">
+                <span class="form-popup__error email-input-error">Какой-то неправильный email</span>
+                <label for="text" class="form-popup__label">Текст</label>
+                <textarea id="text" rows="8" class="form-popup__input" spellcheck="true"></textarea>
+                <span class="form-popup__error text-input-error"></span>
+            </fieldset>
+            <input type="submit" value="Отправить" class="button form-popup__submit-button button_inactive" disabled="">
+        </form>
+    </div>
+</div>
 <div class="rain rain_animation"></div>
-<script src="scripts/index.js"></script>
+<script src="scripts/change_theme.js"></script>
+<script src="scripts/intrusive_popup.js"></script>
+<script src="scripts/rain.js"></script>
+<script src="scripts/gallery.js"></script>
 </body>
 </html>
