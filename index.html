@@ -76,7 +76,7 @@
     <h3>Вы дошли до конца, поэтому получайте приз:</h3>
     <button class="footer__button footer__button_beer">Тыкни сюда!</button>
     <h3>Если у вас есть ко мне вопросы, можете задать их лично:</h3>
-    <button>Связаться со мной</button>
+    <button class="footer__button footer__button_feedback">Связаться со мной</button>
     <h3>Ссылки</h3>
     <div class="footer__links">
         <a href="https://t.me/ruslan_o_clock" target="_blank"><img src="img/logos/telegram_logo.png" class="footer__img" alt="Телега"></a>
@@ -87,16 +87,16 @@
 <div class="popup form-popup">
     <div class="form-popup__container">
         <form class="form form-popup__form_feedback" novalidate="">
-            <h2 class="form-popup__header">Форма обратной связи</h2>
+            <h2 class="form-popup__heading">Feedback</h2>
             <fieldset class="form-popup__input-container">
-                <label for="phone" class="form-popup__label">Телефон</label>
-                <input id="phone" placeholder="79999999999" type="tel" class="form-popup__input" maxlength="11">
-                <span class="form-popup__error tel-input-error">Номер телефона должен состоять из 11 цифр, как в примере</span>
                 <label for="email" class="form-popup__label">Email</label>
                 <input id="email" placeholder="RuslanKrut228@gmail.com" type="email" class="form-popup__input" required="">
                 <span class="form-popup__error email-input-error">Какой-то неправильный email</span>
+                <label for="phone" class="form-popup__label">Телефон</label>
+                <input id="phone" placeholder="79999999999" type="tel" class="form-popup__input" maxlength="11">
+                <span class="form-popup__error tel-input-error">Номер телефона должен состоять из 11 цифр, как в примере</span>
                 <label for="text" class="form-popup__label">Текст</label>
-                <textarea id="text" rows="8" class="form-popup__input" spellcheck="true"></textarea>
+                <textarea id="text" rows="7" class="form-popup__input" placeholder="текст" spellcheck="true"></textarea>
                 <span class="form-popup__error text-input-error"></span>
             </fieldset>
             <input type="submit" value="Отправить" class="button form-popup__submit-button button_inactive" disabled="">
@@ -108,5 +108,6 @@
 <script src="scripts/intrusive_popup.js"></script>
 <script src="scripts/rain.js"></script>
 <script src="scripts/gallery.js"></script>
+<script src="scripts/feedback.js"></script>
 </body>
 </html>
