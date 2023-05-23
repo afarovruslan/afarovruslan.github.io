@@ -1,4 +1,20 @@
 const feedbackPopup = document.querySelector(".form-popup");
+const successfulSubmit = document.querySelector('.intrusive-popup_submit-successful');
+const successfulSubmitCB = successfulSubmit.querySelector(".intrusive-popup__close");
+function openSubmitWindow() {
+    successfulSubmit.classList.add('intrusive-popup_active');
+}
+
+function closeSubmitWindow() {
+    successfulSubmit.classList.remove('intrusive-popup_active');
+}
+
+successfulSubmitCB.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    closeSubmitWindow();
+})
+
 feedbackPopup.addEventListener('click', function(evt) {
     if (evt.target === feedbackPopup) {
         closePopup(feedbackPopup);
@@ -24,6 +40,7 @@ feedbackForm.addEventListener('submit', async function () {
         })
     }).then(function () {
         closePopup(feedbackPopup);
+        openSubmitWindow();
     }).catch(function (error) {
         alert(error)
     })
@@ -69,20 +86,14 @@ enableValidation(form)
 
 const emailPattern = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 function validateEmail(inputElement) {
-    if (!emailPattern.test(inputElement.value)) {
-        inputElement.focus();
-        return false;
-    }
-    return true
+    return emailPattern.test(inputElement.value);
+
 }
 
 const phonePattern = /^\d{11}$/;
 function validateTel(inputElement) {
-    if (!phonePattern.test(inputElement.value)) {
-        inputElement.focus();
-        return false;
-    }
-    return true
+    return phonePattern.test(inputElement.value);
+
 }
 
 function isValid(inputElement, spanError) {
